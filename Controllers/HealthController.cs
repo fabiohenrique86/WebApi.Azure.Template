@@ -2,7 +2,9 @@
 
 namespace WebApi.Azure.Template.Controllers
 {
-    public class HealthController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class HealthController : ControllerBase
     {
         [HttpGet]
         public IActionResult Get()
